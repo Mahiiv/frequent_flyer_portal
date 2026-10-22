@@ -3,7 +3,7 @@
 A simple website for airline floor staff to look up frequent flyer members, check their points, and add new members. The client was using paper and Excel sheets and losing data, so this replaces that.
 
 ## Links
-- Live site: (add Vercel link here)\
+- Live site: https://frequentflyerportal.vercel.app/
   
 ## What it does
 
