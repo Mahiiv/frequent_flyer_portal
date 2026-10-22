@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Frequent Flyer Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="page">
+  <h1 id="title">Frequent Flyer Portal</h1>
+
+  <div id="form-box">
+    <h2>Add a member</h2>
+
+    <label for="name-input">Name</label>
+    <input id="name-input" type="text">
+    <p class="error" id="name-error"></p>
+
+    <label for="email-input">Email</label>
+    <input id="email-input" type="text">
+    <p class="error" id="email-error"></p>
+
+    <label for="points-input">Points</label>
+    <input id="points-input" type="text">
+    <p class="error" id="points-error"></p>
+
+    <button id="add-button" aria-label="Add member">Add member</button>
+    <p id="message" aria-live="polite"></p>
+  </div>
+
+  <div id="list-box">
+    <h2>Members</h2>
+
+    <label for="search-input">Search</label>
+    <input id="search-input" type="text" placeholder="type a name...">
+
+    <p id="loading" aria-live="polite">Loading members...</p>
+    <p id="empty" style="display:none;">No data found</p>
+
+    <table id="table" style="display:none;">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Tier</th>
+        <th>Points</th>
+      </tr>
+      <tbody id="table-body"></tbody>
+    </table>
+  </div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
